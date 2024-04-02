@@ -1,0 +1,23 @@
+{
+  "name": "@repo-ui/tailwind-presets",
+  "version": "0.0.1",
+  "description": "tailwindcss presets for repo-ui: https://tailwindcss.com/docs/presets",
+  "private": true,
+  "author": "It's your",
+  "license": "MIT",
+  "sideEffects": false,
+  "main": "src/index.ts",
+  "scripts": {
+    "build:type": "tsup --dts-only"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.3"
+  },
+  "peerDependencies": {
+    "tailwindcss": "^3.4.3"
+  },
+  "dependencies": {
+    "@ctrl/tinycolor": "3.6.0",
+    "class-variance-authority": "^0.7.0"
+  }
+}

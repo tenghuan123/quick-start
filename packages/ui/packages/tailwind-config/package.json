@@ -1,0 +1,23 @@
+{
+    "name": "@repo-ui/tailwind-config",
+    "version": "0.0.1",
+    "description": "Provide a basic scalable tailwind for easy maintenance of content",
+    "license": "MIT",
+    "author": "It's your",
+    "sideEffects": false,
+    "main": "src/index.ts",
+    "scripts": {
+      "build:type": "tsup --dts-only"
+    },
+    "dependencies": {
+      "deepmerge": "^4.3.1"
+    },
+    "devDependencies": {
+      "@repo-ui/tailwind-presets": "0.0.1",
+      "tailwindcss": "^3.4.3"
+    },
+    "peerDependencies": {
+      "tailwindcss": "^3.4.3"
+    }
+  }
+    
