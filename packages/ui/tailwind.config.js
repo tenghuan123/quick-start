@@ -3,7 +3,7 @@ import { extendsTailwindConfig } from '@repo-ui/tailwind-config'
 export default extendsTailwindConfig({
   dirname: __dirname,
   config: {
-    content: ['./packages/**/*.{js,ts,jsx,tsx}'],
+    // content: ['./packages/**/*.{js,ts,jsx,tsx}'],
     theme: {
       screens: {
         '2xl': { max: '1920px' },

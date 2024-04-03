@@ -4,19 +4,19 @@ import * as React from "react"
 import { Check, ChevronsUpDown } from "lucide-react"
 
 import { cn } from "../utils"
-import { Button } from "./button"
+import { Button } from "../button"
 import {
   Command,
   CommandEmpty,
   CommandGroup,
   CommandInput,
   CommandItem,
-} from "./command"
+} from "../command"
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from "./popover"
+} from "../popover"
 
 const frameworks = [
   {
@@ -77,7 +77,7 @@ export function ComboboxDemo() {
                 <Check
                   className={cn(
                     "mr-2 h-4 w-4",
-                    value === framework.value ? "opacity-100" : "opacity-0"
+                    value === framework.value ? "opacity-100" : "opacity-0",
                   )}
                 />
                 {framework.label}

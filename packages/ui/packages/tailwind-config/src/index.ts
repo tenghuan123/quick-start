@@ -1,5 +1,5 @@
 import path from 'path'
-import fs from 'fs'
+// import fs from 'fs'
 import { dioaTWPresets } from '@repo-ui/tailwind-presets'
 // import { plugins } from '@dioa-ui/tailwind-plugins'
 import merge from 'deepmerge'
@@ -37,20 +37,25 @@ export interface PackageJSON {
   }
 }
 
-function getDirectories(p: string) {
-  return fs.readdirSync(p).filter(function (file) {
-    return fs.statSync(p + '/' + file).isDirectory()
-  })
-}
+// function getDirectories(p: string) {
+//   return fs.readdirSync(p).filter(function (file: string) {
+//     return fs.statSync(p + '/' + file).isDirectory()
+//   })
+// }
 
 export const extendsTailwindConfig = (params: ExtendsTailwindConfigParams) => {
   const { dirname, config = {} } = params
+
+  const dioaPkg = '@repo-ui/react'
 
   const content = [
     // By default, automatically find './src /**/*.{ js, ts, jsx, tsx} in the current directory.'
     path.join(dirname, './src/**/*.{js,ts,jsx,tsx}'),
     path.join(dirname, './app/**/*.{js,ts,jsx,tsx}'),
+    path.join(path.dirname(require.resolve(dioaPkg)), '**/*.{js,ts,jsx,tsx}'),
   ]
+
+  console.log(content)
 
   const mergeConfig = merge(
     {

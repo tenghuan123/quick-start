@@ -9,7 +9,7 @@
   "sideEffects": false,
   "main": "index.ts",
   "scripts": {
-    "build:type": "tsup --dts-only"
+    "lint": "eslint . --max-warnings 0"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.3.4",
