@@ -1,0 +1,17 @@
+{
+  "name": "@repo-ui/tailwind-plugins",
+  "version": "0.0.1",
+  "private": true,
+  "description": "tailwindcss plugins for repo-ui: https://tailwindcss.com/docs/plugins",
+  "author": "it's your",
+  "license": "MIT",
+  "sideEffects": false,
+  "main": "src/index.ts",
+  "devDependencies": {
+    "tailwindcss": "3.3.3",
+    "tailwindcss-animate": "^1.0.7"
+  },
+  "peerDependencies": {
+    "tailwindcss": "3.3.3"
+  }
+}

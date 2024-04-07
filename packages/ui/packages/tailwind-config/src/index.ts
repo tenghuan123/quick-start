@@ -1,7 +1,7 @@
 import path from 'path'
 // import fs from 'fs'
 import { dioaTWPresets } from '@repo-ui/tailwind-presets'
-// import { plugins } from '@dioa-ui/tailwind-plugins'
+import plugins from '@repo-ui/tailwind-plugins'
 import merge from 'deepmerge'
 import type { Config } from 'tailwindcss'
 
@@ -9,7 +9,7 @@ export const tailwindBaseConfig: Config = {
   content: [],
   presets: [dioaTWPresets],
 
-//   plugins: [...plugins],
+  plugins: [...plugins],
 }
 
 export type ExtendsTailwindConfigParams = {
@@ -54,8 +54,6 @@ export const extendsTailwindConfig = (params: ExtendsTailwindConfigParams) => {
     path.join(dirname, './app/**/*.{js,ts,jsx,tsx}'),
     path.join(path.dirname(require.resolve(dioaPkg)), '**/*.{js,ts,jsx,tsx}'),
   ]
-
-  console.log(content)
 
   const mergeConfig = merge(
     {
