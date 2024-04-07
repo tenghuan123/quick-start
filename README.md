@@ -1,81 +1,43 @@
-# Turborepo starter
+# quick-start
 
-This is an official starter Turborepo.
+This is a monorepo project based on the currently popular framework and library, without too much configuration, you can start your project, Out Of The Box
 
-## Using this example
+Why is there this library?
 
-Run the following command:
+Originating from myself, when trying to start a brand new project, I need to do too many things that are not related to my project but necessary
 
-```sh
-npx create-turbo@latest
-```
+1. I need to consider whether my CSS solution is CSS-in-JS or an atomized CSS solution (e.g. [tailwind] ( https://tailwindcss.com/docs/installation ))
+2. If I need to use [tailwind] ( https://tailwindcss.com/docs/installation ), my customization will be stronger, I prefer my own [tailwind] ( https://tailwindcss.com/docs/installation ) component library, so I can do whatever I want, so I have to look for a component library similar to headless
+3. I am not a professional UI component designer, but it would be great to have a nice theme. At this time, I found a great library, which is [shacdn-ui] ( https://ui.shadcn.com /)
+4. Well, I also solved the library, I finally want to get the project architecture, and start using [turbrepo] ( https://turborepo.org/ ) to make a monorepo template
+5. Start changing eslint configuration, changing tsconfig configuration, various configurations...
+6. Start copying and pasting [shacdn-ui] ( https://ui.shadcn.com/ ) components, I like it, but it's really tiring bro
+7. Start intervening [storybook] ( https://storybook.js.org/ ) and test each component to make sure they are running properly
+8. OK, we're finally going to start our project!
 
-## What's inside?
+Okay, we didn't start thinking about our business code until the last step. Then we have to consider designing authentication, verification, routing, etc. Hey, did you notice? Today, it's really difficult to start a project. I just control these things myself, and as a result, I may spend several days preparing for the early stage.
 
-This Turborepo includes the following packages/apps:
+So, I hope everyone can start the creative stage directly. I have added some preset things to this project, so that everyone can directly enter the creative time.
 
-### Apps and Packages
+Looking to the future?
 
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `web`: another [Next.js](https://nextjs.org/) app
-- `@repo/ui`: a stub React component library shared by both `web` and `docs` applications
-- `@repo/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
+Before starting this topic, I still need to thank the author of [shacdn-ui] ( https://ui.shadcn.com/ ) [shacdn] ( https://github.com/shadcn ) and its maintainer, which is based on a lot of inspiration from me. It is a great library until more people see it.
 
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
+Scaffold can automatically implant code into the project, which is really cool. So I thought, can I bring this idea to the backend? For example, I can use the Scaffold command to port an authentication service and design to the project, and it can run normally. It also incorporates high flexibility, making it easy for developers to adjust it at any time.
 
-### Utilities
+Therefore, this template is just the first step. In the future, I will introduce more backend services into the project to make its functionality more powerful.
 
-This Turborepo has some additional tools already setup for you:
+## RoadMap
 
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
-
-### Build
-
-To build all apps and packages, run the following command:
-
-```
-cd my-turborepo
-pnpm build
-```
-
-### Develop
-
-To develop all apps and packages, run the following command:
-
-```
-cd my-turborepo
-pnpm dev
-```
-
-### Remote Caching
-
-Turborepo can use a technique known as [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
-
-By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup), then enter the following commands:
-
-```
-cd my-turborepo
-npx turbo login
-```
-
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
-
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your Turborepo:
-
-```
-npx turbo link
-```
-
-## Useful Links
-
-Learn more about the power of Turborepo:
-
-- [Tasks](https://turbo.build/repo/docs/core-concepts/monorepos/running-tasks)
-- [Caching](https://turbo.build/repo/docs/core-concepts/caching)
-- [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching)
-- [Filtering](https://turbo.build/repo/docs/core-concepts/monorepos/filtering)
-- [Configuration Options](https://turbo.build/repo/docs/reference/configuration)
-- [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference)
+- [] Scaffolding tools
+- []  changelog
+Architecture with front-end and back-end separation
+- [] Automatic generation of backend swagger documents
+- [] zodios implement e2e type safety
+- [] remix project setup
+- [] Paradigm of data acquisition
+- [] form for bidirectional verification
+- [] Routing scheme
+- []  Authentication
+- []  Authorization
+- [] deployment plan
