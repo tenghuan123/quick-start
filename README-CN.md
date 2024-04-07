@@ -41,3 +41,7 @@
 - [ ]  Authentication
 - [ ]  Authorization
 - [ ]  部署方案
+
+## 语言
+
+[英语](https://github.com/tenghuan123/quick-start/blob/main/README.md)｜[中文](https://github.com/tenghuan123/quick-start/blob/main/README-CN.md)

@@ -2,7 +2,7 @@
 
 This is a monorepo project based on the currently popular framework and library, without too much configuration, you can start your project, Out Of The Box
 
-Why is there this library?
+## Why is there this library?
 
 Originating from myself, when trying to start a brand new project, I need to do too many things that are not related to my project but necessary
 
@@ -19,7 +19,7 @@ Okay, we didn't start thinking about our business code until the last step. Then
 
 So, I hope everyone can start the creative stage directly. I have added some preset things to this project, so that everyone can directly enter the creative time.
 
-Looking to the future?
+## Looking to the future?
 
 Before starting this topic, I still need to thank the author of [shacdn-ui] ( https://ui.shadcn.com/ ) [shacdn] ( https://github.com/shadcn ) and its maintainer, which is based on a lot of inspiration from me. It is a great library until more people see it.
 
@@ -29,15 +29,19 @@ Therefore, this template is just the first step. In the future, I will introduce
 
 ## RoadMap
 
-- [] Scaffolding tools
-- []  changelog
-Architecture with front-end and back-end separation
-- [] Automatic generation of backend swagger documents
-- [] zodios implement e2e type safety
-- [] remix project setup
-- [] Paradigm of data acquisition
-- [] form for bidirectional verification
-- [] Routing scheme
-- []  Authentication
-- []  Authorization
-- [] deployment plan
+- [ ]  Scaffolding tools
+- [ ]  changelog
+- [ ]  Architecture with front-end and back-end separation
+- [ ]  Automatic generation of backend swagger documents
+- [ ]  zodios implement e2e type safety
+- [ ]  remix project setup
+- [ ]  Paradigm of data acquisition
+- [ ]  form for bidirectional verification
+- [ ]  Routing scheme
+- [ ]  Authentication
+- [ ]  Authorization
+- [ ]  deployment plan
+
+## Language
+
+[English] ( https://github.com/tenghuan123/quick-start/blob/main/README.md ) | [Chinese] ( https://github.com/tenghuan123/quick-start/blob/main/README-CN.md )
