@@ -1,0 +1,32 @@
+{
+  "name": "quick-start-cli",
+  "version": "1.0.0",
+  "description": "Cli for quickly generating project templates",
+  "type": "module",
+  "bin": {
+    "quick-start": "./dist/index.js"
+  },
+  "exports": "./dist/index.js",
+  "scripts": {
+    "dev": "yarn tsup && node dist/index.js"
+  },
+  "keywords": [
+    "cli"
+  ],
+  "author": "xuanxin",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^12.0.0",
+    "tsup": "^8.0.2"
+  },
+  "tsup": {
+    "entry": [
+      "src/index.ts"
+    ],
+    "splitting": false,
+    "sourcemap": true,
+    "clean": true,
+    "format": "esm",
+    "target": "esnext"
+  }
+}
