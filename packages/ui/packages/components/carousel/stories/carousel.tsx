@@ -1,13 +1,13 @@
-import * as React from 'react'
-import Autoplay from 'embla-carousel-autoplay'
-import { Card, CardContent } from '../../card'
+import * as React from "react"
+import Autoplay from "embla-carousel-autoplay"
+import { Card, CardContent } from "../../card"
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from '../index'
+} from "../index"
 
 export function CarouselDemo() {
   return (
@@ -62,7 +62,7 @@ export function CarouselOrientation() {
   return (
     <Carousel
       opts={{
-        align: 'start',
+        align: "start",
       }}
       orientation="vertical"
       className="w-full max-w-xs"

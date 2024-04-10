@@ -14,7 +14,7 @@
       "persistent": true
     },
     "storybook": {
-        "cache": false
+      "cache": false
     }
   }
 }

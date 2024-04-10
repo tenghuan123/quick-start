@@ -1,0 +1,12 @@
+{
+  "name": "copy-to-template",
+  "version": "1.0.0",
+  "description": "Copy the folder in the project to the template, for example ui",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "xuanxin",
+  "license": "MIT"
+}

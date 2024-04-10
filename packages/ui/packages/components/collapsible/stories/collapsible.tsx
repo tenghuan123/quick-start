@@ -4,11 +4,7 @@ import * as React from "react"
 import { ChevronsUpDown } from "lucide-react"
 
 import { Button } from "../../button"
-import {
-  Collapsible,
-  CollapsibleContent,
-  CollapsibleTrigger,
-} from "../index"
+import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "../index"
 
 export function CollapsibleDemo() {
   const [isOpen, setIsOpen] = React.useState(false)

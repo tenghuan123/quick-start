@@ -1,9 +1,9 @@
-import path from 'path'
+import path from "path"
 // import fs from 'fs'
-import { dioaTWPresets } from '@repo-ui/tailwind-presets'
-import plugins from '@repo-ui/tailwind-plugins'
-import merge from 'deepmerge'
-import type { Config } from 'tailwindcss'
+import { dioaTWPresets } from "@repo-ui/tailwind-presets"
+import plugins from "@repo-ui/tailwind-plugins"
+import merge from "deepmerge"
+import type { Config } from "tailwindcss"
 
 export const tailwindBaseConfig: Config = {
   content: [],
@@ -46,13 +46,13 @@ export interface PackageJSON {
 export const extendsTailwindConfig = (params: ExtendsTailwindConfigParams) => {
   const { dirname, config = {} } = params
 
-  const dioaPkg = '@repo-ui/react'
+  const dioaPkg = "@repo-ui/react"
 
   const content = [
     // By default, automatically find './src /**/*.{ js, ts, jsx, tsx} in the current directory.'
-    path.join(dirname, './src/**/*.{js,ts,jsx,tsx}'),
-    path.join(dirname, './app/**/*.{js,ts,jsx,tsx}'),
-    path.join(path.dirname(require.resolve(dioaPkg)), '**/*.{js,ts,jsx,tsx}'),
+    path.join(dirname, "./src/**/*.{js,ts,jsx,tsx}"),
+    path.join(dirname, "./app/**/*.{js,ts,jsx,tsx}"),
+    path.join(path.dirname(require.resolve(dioaPkg)), "**/*.{js,ts,jsx,tsx}"),
   ]
 
   const mergeConfig = merge(

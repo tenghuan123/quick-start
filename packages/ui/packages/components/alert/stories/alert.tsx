@@ -1,16 +1,10 @@
 import { Terminal } from "lucide-react"
 
-import {
-  Alert,
-  AlertDescription,
-  AlertTitle,
-} from "../index"
+import { Alert, AlertDescription, AlertTitle } from "../index"
 
-type AlertProps = React.ComponentPropsWithoutRef<
-typeof Alert
->
+type AlertProps = React.ComponentPropsWithoutRef<typeof Alert>
 
-export function AlertDemo({ variant = 'default' }: AlertProps) {
+export function AlertDemo({ variant = "default" }: AlertProps) {
   return (
     <Alert variant={variant}>
       <Terminal className="h-4 w-4" />

@@ -1,13 +1,11 @@
-import React from 'react'
-import type {
-  AccordionProps,
-} from '../index';
+import React from "react"
+import type { AccordionProps } from "../index"
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from '../index'
+} from "../index"
 
 export function AccordionDemo({ type = "single" }: AccordionProps) {
   return (

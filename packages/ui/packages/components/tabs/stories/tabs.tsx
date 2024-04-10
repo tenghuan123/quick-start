@@ -10,12 +10,7 @@ import {
 } from "../../card"
 import { Input } from "../../input"
 import { Label } from "../../label"
-import {
-  Tabs,
-  TabsContent,
-  TabsList,
-  TabsTrigger,
-} from "../index"
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "../index"
 
 export function TabsDemo() {
   return (

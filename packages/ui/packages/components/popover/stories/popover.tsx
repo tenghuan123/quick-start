@@ -1,11 +1,7 @@
 import { Button } from "../../button"
 import { Input } from "../../input"
 import { Label } from "../../label"
-import {
-  Popover,
-  PopoverContent,
-  PopoverTrigger,
-} from "../index"
+import { Popover, PopoverContent, PopoverTrigger } from "../index"
 
 export function PopoverDemo() {
   return (

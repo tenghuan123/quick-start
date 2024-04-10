@@ -12,5 +12,9 @@ export function ProgressDemo() {
     return () => clearTimeout(timer)
   }, [])
 
-  return <div className="min-w-[300px]"><Progress value={progress} className="w-[60%]" /></div>
+  return (
+    <div className="min-w-[300px]">
+      <Progress value={progress} className="w-[60%]" />
+    </div>
+  )
 }

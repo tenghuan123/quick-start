@@ -1,3 +1,3 @@
-import tailwindcssAnimate from 'tailwindcss-animate'
+import tailwindcssAnimate from "tailwindcss-animate"
 
 export default [tailwindcssAnimate]

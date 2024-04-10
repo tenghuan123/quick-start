@@ -1,16 +1,8 @@
 import { CalendarDays } from "lucide-react"
 
-import {
-  Avatar,
-  AvatarFallback,
-  AvatarImage,
-} from "../../avatar"
+import { Avatar, AvatarFallback, AvatarImage } from "../../avatar"
 import { Button } from "../../button"
-import {
-  HoverCard,
-  HoverCardContent,
-  HoverCardTrigger,
-} from "../index"
+import { HoverCard, HoverCardContent, HoverCardTrigger } from "../index"
 
 export function HoverCardDemo() {
   return (
