@@ -1,0 +1,8 @@
+build
+dist
+cache
+.eslintrc
+.vscode/linenote
+*.hbs
+*.md
+*.html

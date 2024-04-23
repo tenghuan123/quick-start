@@ -1,0 +1,32 @@
+{
+  "name": "my-turborepo",
+  "private": true,
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "lint": "turbo lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "storybook": "turbo storybook --filter=repo-ui",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "*",
+    "@repo/typescript-config": "*",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
+    "prettier": "3.2.5",
+    "turbo": "latest"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "packageManager": "yarn@1.22.19",
+  "workspaces": [
+    "apps/*",
+    "packages/*",
+    "packages/ui/packages/*"
+  ],
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  }
+}

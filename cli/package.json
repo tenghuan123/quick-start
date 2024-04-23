@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "description": "Cli for quickly generating project templates",
   "type": "module",
-  "bin": {
-    "quick-start": "./dist/index.js"
-  },
+  "bin": "./dist/index.js",
   "exports": "./dist/index.js",
   "scripts": {
     "dev": "yarn tsup && node dist/index.js"
